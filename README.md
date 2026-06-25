@@ -18,11 +18,11 @@ This project was completed as the Individual Coding Project for DIGHUM 101 UC Be
 
 ## Data Sources
 
-- [Letterboxd Movie Reviews Dataset（90016 Reviews)] — 90,016 reviews
+- [Letterboxd Movie Reviews Dataset（90016 Reviews)] — 90,016 reviews  
 https://www.kaggle.com/datasets/riyosha/letterboxd-movie-reviews-90000 
-- [Letterboxd Movie Metadata Dataset] — film genres and spoken languages
+- [Letterboxd Movie Metadata Dataset] — film genres and spoken languages  
 https://www.kaggle.com/datasets/ky1338/10000-movies-letterboxd-data 
-- [IMDb Movie Reviews Dataset] — used in early exploratory phase only
+- [IMDb Movie Reviews Dataset] — used in early exploratory phase only  
 https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews 
 
 
@@ -34,29 +34,30 @@ https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-review
 - Topic modeling using Latent Dirichlet Allocation (LDA)
 
 ## Repository Structure
+
+```
 letterboxd-top250-reviewing-culture/
-
 ├── notebooks/
-
-│   └── analysis.ipynb    # Main project notebook
-
+│   └── analysis.ipynb
 ├── README.md
-
 └── .gitignore
+```
 
-> **Note:** Data files are not included in this repository due to file size. 
-> All datasets are publicly available on Kaggle (see Data Sources above).
+> Data files are not included due to file size. All datasets are publicly available on Kaggle (see Data Sources above).
 
 ## Requirements
 
-Install dependencies with:
+This project uses the course environment `dighum101`. Two additional packages need to be installed:
 
 ```bash
-pip install pandas matplotlib seaborn nltk vaderSentiment scikit-learn pyLDAvis
+pip install vaderSentiment pyLDAvis
 ```
 
-Or use the course environment:
-
-```bash
-conda activate dighum101
-```
+Full dependency list:
+- `pandas`
+- `matplotlib`
+- `seaborn`
+- `nltk`
+- `scikit-learn`
+- `vaderSentiment`
+- `pyLDAvis`
